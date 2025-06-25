@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe App</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome (for close icon) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-wrapper">
+        <img src="https://i.pinimg.com/originals/7a/21/38/7a21389d8acd250996753cfba154ccbf.png" 
+             alt="Recipe App Logo" 
+             class="logo-img" />
+        <span class="logo-text"><i><u>Tasty Tales</u></i></span>
+      </div>
+
+      <form id="searchForm">
+        <input type="text" placeholder="Search for recipes..." class="searchBox" />
+        <button type="submit" class="searchBtn">Search</button>
+      </form>
+    </nav>
+  </header>
+
+
+
+  <!-- ✅ Banner Section -->
+  <section class="banner">
+    <img src="https://marketplace.canva.com/EAGe1GNQr6E/1/0/1600w/canva-green-and-grey-modern-vegetable-sandwich-banner-dk3dyFmkToY.jpg" 
+         alt="Recipe Banner" />
+  </section>
+    <main>
+    <section>
+      <div class="recipe-container">
+        <h2>Search your Favourite Recipe</h2>
+      </div>
+    </section>
+<!--Fill up the page section-->
+ <section class="Fill">
+  <div class="review">
+     <div>
+      <h3>Rajesh Kapadia</h3>
+      <p>I followed your butter chicken recipe and my entire family thought I ordered from a restaurant! Absolute game-changer 🔥🍗.</p>
+     </div>
+     <div>
+      <h3>Dimple Kapoor</h3>
+      <p>As a college student away from home, these recipes have been a blessing. I feel like my mom’s in the kitchen with me.</p>
+     </div>
+     <div>
+      <h3>Shanaya Singhnaia</h3>
+      <p> The interface is so cute and easy to use. Recipes are well written, and the pop-up instructions are genius!</p>
+     </div>
+     <div>
+      <h3>Kabir Joshi</h3>
+      <p>Made the mango cheesecake recipe and it vanished in 5 minutes. Even my gym trainer asked for a second slice!</p>
+     </div>
+     
+  </div>
+  </section>
+
+    <!-- Modal Popup -->
+    <div class="recipe-modal">
+      <div class="recipe-details">
+        <button type="button" class="recipe-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="recipe-details-content"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
