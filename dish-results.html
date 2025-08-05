@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dish Results</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-wrapper">
+  <a href="index.html">
+    <img src="https://i.pinimg.com/1200x/91/df/0a/91df0aa43a530957eaecd1e3b5463eae.jpg" alt="Tasty Tales" class="logo-img" />
+    <span class="logo-text"><i><u>Tasty Tales</u></i></span>
+  </a>
+</div>
+
+
+      <form id="searchForm">
+        <input
+          type="text"
+          id="dishInput"
+          placeholder="Search for recipes..."
+          class="searchBox"
+        />
+        <button id="searchBtn" type="submit">Search</button>
+      </form>
+    </nav>
+  </header>
+
+  <main>
+    <section class="recipe-results">
+      <!-- this h2 will be updated dynamically -->
+      <h2 id="resultsTitle">Dish Results</h2>
+      <div class="recipe-grid" id="resultsContainer"></div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="recipe-modal">
+    <div class="recipe-details">
+      <button type="button" class="recipe-close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="recipe-details-content"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
