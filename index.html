@@ -18,16 +18,19 @@
   <header>
     <nav>
       <div class="logo-wrapper">
-        <img src="https://i.pinimg.com/originals/7a/21/38/7a21389d8acd250996753cfba154ccbf.png" 
-             alt="Recipe App Logo" 
-             class="logo-img" />
-        <span class="logo-text"><i><u>Tasty Tales</u></i></span>
-      </div>
+  <a href="index.html">
+    <img src="https://i.pinimg.com/1200x/91/df/0a/91df0aa43a530957eaecd1e3b5463eae.jpg" alt="Tasty Tales" class="logo-img" />
+    <span class="logo-text"><i><u>Tasty Tales</u></i></span>
+  </a>
+</div>
+
+    
 
       <form id="searchForm">
-        <input type="text" placeholder="Search for recipes..." class="searchBox" />
-        <button type="submit" class="searchBtn">Search</button>
+        <input type="text" id="dishInput" placeholder="Search for recipes..." class="searchBox" />
+        <button id="searchBtn" type="submit">Search</button>
       </form>
+    
     </nav>
   </header>
 
@@ -43,9 +46,28 @@
       <div class="recipe-container">
         <h2>Search your Favourite Recipe</h2>
       </div>
-    </section>
+     </section>
+     <section class="items">
+  <div class="ingredients">
+    <div class="ingredients-text">
+      <h2>Confused???</h2>
+      <p>
+        Not sure what to cook with the ingredients you have on hand? Don’t worry we’ve got you covered! Just enter up to three ingredients from your kitchen, and our smart search will do the rest. From everyday items to surprise combinations, we’ll suggest a variety of delicious dishes you can make in no time. It’s a fun, easy way to turn whatever you have into something truly tasty because great meals don’t need a long grocery list, just a little creativity!
+      </p>
+      <br>
+      <form id="searchingredients">
+        <input type="text" id="ingredientInput" class="searchBox" placeholder="Enter Dish Name..." />
+        <button id="submit" class="search-btn">Search</button>
+
+      </form>
+    </div>
+    <img src="https://www.appliancesdirect.co.uk/Images/CRI771_3_Supersize.jpg?v=4" alt="fridge" />
+  </div>
+</section>
+
 <!--Fill up the page section-->
  <section class="Fill">
+    <h2 class="review-heading">Ratings & Review</h2> 
   <div class="review">
      <div>
       <h3>Rajesh Kapadia</h3>
@@ -76,7 +98,31 @@
         <div class="recipe-details-content"></div>
       </div>
     </div>
+
   </main>
+   <!-- Footer -->
+    <footer class="Footer">
+  <div class="footer-left">
+    <h2>Connect with Us</h2>
+    <a href="mailto:contact@tastytales.com" class="footer-contact-btn" title="Email Us">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://www.instagram.com/tastytales" target="_blank" class="footer-contact-btn" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/tastytales" target="_blank" class="footer-contact-btn" title="Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </div>
+
+  <div class="footer-right">
+    <p>
+      Discover recipes by dish name or create delicious meals with just a few ingredients —
+      cooking made simple, smart, and fun with whatever’s in your kitchen!
+    </p>
+    <img src="https://i.pinimg.com/736x/1a/88/78/1a8878e7aa9c73c4b29d34234a5c5de5.jpg" alt="cookingchef">
+  </div>
+</footer>
 
   <!-- JS -->
   <script src="script.js"></script>
